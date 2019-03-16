@@ -5,20 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Ayur_Connect</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/css/Features-Blue.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean-1.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="static/css/Features-Blue.css">
+    <link rel="stylesheet" href="static/css/Footer-Basic.css">
+    <link rel="stylesheet" href="static/css/Header-Blue.css">
+    <link rel="stylesheet" href="static/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="static/css/Login-Form-Clean-1.css">
+    <link rel="stylesheet" href="static/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="static/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
 <body>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDkjNXBrYHIVC-PGlyAYCuNEx9KIssRgVU",
+    authDomain: "ayur-7ec86.firebaseapp.com",
+    databaseURL: "https://ayur-7ec86.firebaseio.com",
+    projectId: "ayur-7ec86",
+    storageBucket: "ayur-7ec86.appspot.com",
+    messagingSenderId: "678410598979"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-firestore.js"></script>
     <div>
         <div class="header-blue" style="height: 700px;">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
@@ -56,9 +72,9 @@
                         <tr>
                             <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
                             <td>
-                                <form><input class="form-control" type="text"></form>
+                                <form id="rd_data"><input class="form-control" type="text" id="ID">
                             </td>
-                            <td><button class="btn btn-primary" type="button">Log In</button></td>
+                            <td><button class="btn btn-primary" type="button" onclick="read(document.getElementById('ID').value)">Log In</button></form></td>
                             <td></td>
                         </tr>
                         <tr></tr>
@@ -79,8 +95,9 @@
             <p class="copyright">Ayur_Connect© 2017</p>
         </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
