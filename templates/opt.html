@@ -18,37 +18,62 @@
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
-<body>
+<body onload="load()">
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDkjNXBrYHIVC-PGlyAYCuNEx9KIssRgVU",
+    authDomain: "ayur-7ec86.firebaseapp.com",
+    databaseURL: "https://ayur-7ec86.firebaseio.com",
+    projectId: "ayur-7ec86",
+    storageBucket: "ayur-7ec86.appspot.com",
+    messagingSenderId: "678410598979"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-functions.js"></script>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
         <div class="container"><a class="navbar-brand" href="#">Ayur_Connect</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#"></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
-                </ul>
+
                 <form class="form-inline mr-auto" target="_self">
-                    <div class="form-group"><label for="search-field"></label></div>
+                    <div class="form-group"><label for="search-field"></label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
                 </form><a class="btn btn-light action-button" role="button" href="#">Log Out</a></div>
         </div>
     </nav>
-    <form>
-        <div class="btn-toolbar">
-            <div class="btn-group" role="group">
-            <a href="op.html">  <button class="btn btn-primary" type="button">Out Patient</button></a>
-            <a href="Admitted.html">  <button class="btn btn-primary" type="button">Admitted</button></a></div>
-            <a href="Wearable.html"><button class="btn btn-primary" type="button">Wearable</button></a>
-
-        </div>
-    </form>
-    <div class="login-clean">
-        <form method="post">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-android-person"></i></div><a href="#" class="forgot">Name</a></form>
+    <div class="container">
+      <embed src="assets/MR.pdf" width="500" height="375" type="application/pdf">
     </div>
+
+<div class="container">
+<form class="form-group" target="_self">
+  <label>Priscription</label>
+  <textarea rows="10" cols="50" id="text">
+  </textarea>
+  <button>Submit</button>
+</form>
+</div>
     <script src="static/js/jquery.min.js"></script>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write;
+    }
+  }
+}
+    function load()
+    {
+      javascipt:window.open('assets/MR.pdf');
+    }
+    </script>
 </body>
 
 </html>

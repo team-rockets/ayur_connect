@@ -1,6 +1,7 @@
 const cafeList = document.querySelector('#rd_data');
 function read(x)
 {
+  /*
   var db = firebase.database();
   db.collection('doctor').get().then(snapshot => {
       snapshot.docs.forEach(doc => {
@@ -11,5 +12,7 @@ function read(x)
         });
 
   });
+  */
+  window.open('profile.html', '_blank');
 
 }

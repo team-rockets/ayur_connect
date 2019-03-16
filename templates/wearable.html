@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Ayur_Connect</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/css/Features-Blue.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean-1.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="static/css/Features-Blue.css">
+    <link rel="stylesheet" href="static/css/Footer-Basic.css">
+    <link rel="stylesheet" href="static/css/Header-Blue.css">
+    <link rel="stylesheet" href="static/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="static/css/Login-Form-Clean-1.css">
+    <link rel="stylesheet" href="static/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="static/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
-<body>
+<body onload="func()">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
         <div class="container"><a class="navbar-brand" href="#">Ayur_Connect</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
@@ -33,9 +33,23 @@
                 </form><a class="btn btn-light action-button" role="button" href="#">Action </a></div>
         </div>
     </nav>
-    <div class="btn-group" role="group"><button class="btn btn-primary" type="button">Out patient</button><button class="btn btn-primary" type="button">Admitted</button><button class="btn btn-primary" type="button">Werable</button></div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <div class="btn-toolbar">
+        <div class="btn-group" role="group">
+        <a href="op.html">  <button class="btn btn-primary" type="button">Out Patient</button></a>
+        <a href="Admitted.html">  <button class="btn btn-primary" type="button">Admitted</button></a></div>
+        <a href="Wearable.html"><button class="btn btn-primary" type="button">Wearable</button></a>
+
+    </div>
+    <script>
+
+      function func()
+      {
+        alert("User data Anaysing\n Typical  Non Anginal \n Assymptotic  Symptotic");
+      }
+
+    </script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

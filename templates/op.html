@@ -33,16 +33,18 @@
                 </form><a class="btn btn-light action-button" role="button" href="#">Log Out</a></div>
         </div>
     </nav>
-    <div class="btn-group" role="group"><button class="btn btn-primary" type="button">Out Patient</button><button class="btn btn-primary" type="button">Admitted</button><button class="btn btn-primary" type="button">Critical</button></div>
-    <div class="highlight-blue">
-        <form action="/" method="post">
-            <div class="container">
-                <div class="buttons"><input type="text" name="mrno" placeholder="Enter PMR Code"><a class="btn btn-primary" role="button" href="#">sUBMIT</a><a class="btn btn-primary" role="button" href="#">Scan QR</a></div>
-            </div>
-        </form>
+    <div class="btn-group" role="group"><button class="btn btn-primary" type="button" >Out Patient</button>
+    <a href="Admitted.html">  <button class="btn btn-primary" type="button">Admitted</button></a>
+    <a href="Wearable.html">  <button class="btn btn-primary" type="button">Wearable</button></a>
+    </div>
+    <div class="highlight-blue" style="height: 500px;">
+        <div class="container">
+            <div class="buttons"><input type="text" placeholder="Enter PMR Code"><a class="btn btn-primary" role="button" href="#">SUBMIT</a></div>
+        <center>    <input type="text" placeholder="Enter OTP"><a class="btn btn-primary" role="button" href="opt.html">SUBMIT</a></center>
+        </div>
     </div>
     <script src="static/js/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
