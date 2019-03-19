@@ -10,12 +10,12 @@ def index():
     return flask.render_template('index.html')
     ''''def sendPostRequest(reqUrl, apiKey, secretKey, useType, phoneNo, senderId, textMessage):
         req_params = {
-        'apikey':'EJNDMSDX8B6M48NCT43L5Q5MXW4SKIH4',
-        'secret':'YSXVIV4B6FVW7LLT',
+        'apikey':'xxxxxxxxxxxxxxxxxxxxxxxxx',
+        'secret':'xxxxxxxxxxxxxxxxxxxxxx',
         'usetype':'stage',
-        'phone': '7012161270',
+        'phone':'xxxxxxxxxxxx',
         'message':'OTP is 4898' ,
-        'senderid':'Rizwan'
+        'senderid':'xxxxxxxxxxxx'
         }
         return requests.post(reqUrl, req_params)'''
 
